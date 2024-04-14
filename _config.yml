@@ -132,12 +132,15 @@ comment:
   # Gitalk settings
   # https://github.com/gitalk/gitalk
   gitalk:
+    enable: true
+    githubID: Fiveneves
     clientID: 'f6cf3058e6bb5ed13ae3'
     clientSecret: '3da0d7ded3205425e02e94f94a66c74b69a65c64'
     repo: Fiveneves.github.io
     owner: Fiveneves
     admin:
       - Fiveneves
+    distractionFreeMode: true
 
 # Disqus settings
 #   disqus_username: Fiveneves
