@@ -65,7 +65,9 @@ Hey! I am an image!
 
 ## Math
 
-Inline math: \$$ E = mc^2 $$
+$n*(n+1)/2+2$
+
+Inline math: $$ E = mc^2 $$
 
 Display math:
 
