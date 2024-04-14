@@ -5,7 +5,6 @@ subtitle: Welcome to Jekyll Theme Gungnir
 header-img: img/in-post/2020-10-07/header.jpg
 header-style: text
 catalog: true
-mathjax: true
 tags:
   - 摸鱼
 ---
@@ -66,7 +65,7 @@ Hey! I am an image!
 
 ## Math
 
-Inline math: $$E = mc^2$$
+Inline math: $E = mc^2$
 
 Display math:
 
