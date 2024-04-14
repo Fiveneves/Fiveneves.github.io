@@ -81,7 +81,6 @@ exclude:
 anchorjs: true  # if you want to customize anchor. check out `anchor.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
 # timezone: CN
-timezone: Asia/Shanghai
 
 # Gems
 # you have to `bundle config set path 'vendor/bundle' && bundle install` before local preview
