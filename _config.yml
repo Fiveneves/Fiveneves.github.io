@@ -9,7 +9,7 @@ avatar: "img/header-avatar.jpeg"                    # the avatar showing on the 
 
 
 # GitHub repository (if the site is hosted by GitHub)
-repository: Renovamen/jekyll-theme-gungnir
+repository: Fiveneves/Fiveneves.github.io
 repository_branch: main
 
 
@@ -54,7 +54,7 @@ collections:
 # SNS settings
 sns:
   RSS: true
-  github_username: Renovamen
+  github_username: Fiveneves
   weibo_username:
   zhihu_username: chao-neng-gui-su
   twitter_username: renovamen_zxh
