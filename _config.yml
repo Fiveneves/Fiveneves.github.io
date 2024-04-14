@@ -1,9 +1,9 @@
 # Site settings
-title: Gungnir
-SEOTitle: Jekyll theme Gungnir
-description: Jekyll version of the blog theme Gungnir.
-keyword: "jekyll, theme, blog, blog theme"
-url: "https://jekyll-theme-gungnir.vercel.app"      # your host, for absolute URL
+title: Fiveneves
+SEOTitle: Fiveneves's blog
+description: Fiveneves's blog.
+keyword: "blog, personal website"
+url: "https://fiveneves.github.io/"      # your host, for absolute URL
 baseurl: ""                                         # for example, '/blog' if your blog hosted on 'host/blog'
 avatar: "img/header-avatar.jpeg"                    # the avatar showing on the homepage
 
@@ -122,21 +122,26 @@ menus:
 
 # Comment settings
 comment:
-  provider: gitalk # false (default), "disqus", "gitalk", "valine"
+  active: utterances # 使用github issue作为文章的评论系统
+    utterances:
+      repo: fiveneves.github.io        # <gh-username>/<repo>
+      issue_term: title  # < url | pathname | title | ...>
+  paginate: 20
+  # provider: gitalk # false (default), "disqus", "gitalk", "valine"
 
-  # Disqus settings
-  disqus_username: renovamen
+  # # Disqus settings
+  # disqus_username: renovamen
 
   # Gitalk settings
   # https://github.com/gitalk/gitalk
-  gitalk:
-    clientID: 'faf464da633b08ff5317'
-    clientSecret: '402324fc860894e5fcba6320fddbddd1ec7f5644'
-    repo: gitalk-comments
-    owner: This-is-an-Apple
-    admin:
-      - Renovamen
-      - This-is-an-Apple
+  # gitalk:
+  #   clientID: 'faf464da633b08ff5317'
+  #   clientSecret: '402324fc860894e5fcba6320fddbddd1ec7f5644'
+  #   repo: gitalk-comments
+  #   owner: This-is-an-Apple
+  #   admin:
+  #     - Renovamen
+  #     - This-is-an-Apple
 
   # Valine settings
   # https://valine.js.org/
