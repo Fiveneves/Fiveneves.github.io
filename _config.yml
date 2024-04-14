@@ -129,7 +129,7 @@ comment:
   # paginate: 20
   provider: gitalk # false (default), "disqus", "gitalk", "valine"
 
-  Gitalk settings
+  # Gitalk settings
   https://github.com/gitalk/gitalk
   gitalk:
     clientID: 'f6cf3058e6bb5ed13ae3'
@@ -139,7 +139,7 @@ comment:
     admin:
       - Fiveneves
 
-# # Disqus settings
+# Disqus settings
 #   disqus_username: Fiveneves
 
   # Valine settings
