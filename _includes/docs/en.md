@@ -383,7 +383,7 @@ Otherwise, this function will be enabled for all articles (including `post` and 
 
 Example：
 
-Inline math: $$ E = mc^2 $$
+Inline math: $ E = mc^2 $
 
 Display math:
 
@@ -393,7 +393,7 @@ $$
 
 
 ```plaintext
-$$ E = mc^2 $$
+$ E = mc^2 $
 
 $$
 i \hbar \frac{\partial \psi}{\partial t}
