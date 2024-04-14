@@ -129,9 +129,6 @@ comment:
   # paginate: 20
   provider: gitalk # false (default), "disqus", "gitalk", "valine"
 
-  # Disqus settings
-  disqus_username: renovamen
-
   Gitalk settings
   https://github.com/gitalk/gitalk
   gitalk:
@@ -141,6 +138,9 @@ comment:
     owner: Fiveneves
     admin:
       - Fiveneves
+
+# # Disqus settings
+#   disqus_username: Fiveneves
 
   # Valine settings
   # https://valine.js.org/
