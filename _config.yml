@@ -130,11 +130,11 @@ comment:
   provider: gitalk # false (default), "disqus", "gitalk", "valine"
 
   # Gitalk settings
-  https://github.com/gitalk/gitalk
+  # https://github.com/gitalk/gitalk
   gitalk:
     clientID: 'f6cf3058e6bb5ed13ae3'
     clientSecret: '3da0d7ded3205425e02e94f94a66c74b69a65c64'
-    repo: gitalk-comments
+    repo: fiveneves.github.io
     owner: Fiveneves
     admin:
       - Fiveneves
