@@ -25,8 +25,7 @@ theme_style:
 math:
   enable: true    # false (default), true
                   # math rendering for all posts and keynotes
-  engine: Mathjax         
-                  # "katex" (default), "mathjax"
+  engine:         # "katex" (default), "mathjax"
                   # only make sense when `math.engine: true`
 chart: true       # false (default), true
 mermaid: true     # false (default), true
