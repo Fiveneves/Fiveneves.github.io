@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Hello Word
-subtitle: Welcome to Jekyll Theme Gungnir
+title: Readme
+subtitle: Welcome to Fiveneves's blog
 header-img: img/in-post/2020-10-07/header.jpg
 header-style: text
 catalog: true
 tags:
-  - 摸鱼
+  - Markdown
 ---
 
 ## Paragraph
