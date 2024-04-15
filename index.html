@@ -27,12 +27,7 @@ header-img:
     {% if site.theme_style.post_preview != "text" %}
     <div class="post-preview-img">
       <a href="{{ post.url | prepend: site.baseurl }}">
-<!--         {% if post.header-img.includes("http") %} -->
-          <h3 class="post-subtitle">{{ post.header-img }}</h3>
-<!--           <img src="{{ post.header-img }}" class="cover"> -->
-<!--         {% else %}
           <img src="{{ _assets_baseurl }}/{{ post.header-img }}" class="cover">
-        {% endif %} -->
       </a>
       <div class="else">
         <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
