@@ -2,7 +2,7 @@
 layout: post
 title: 2020 Multi-University Training Contest 2 Total Eclipse
 subtitle: 1001.Total Eclipse
-header-img: https://img-blog.csdnimg.cn/20200728005711651.png
+header-img: https://img2022.cnblogs.com/blog/479918/202206/479918-20220603151526503-1173993291.png
 header-style: text
 catalog: true
 tags:
