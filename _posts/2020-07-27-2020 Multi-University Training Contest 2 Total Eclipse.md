@@ -2,7 +2,7 @@
 layout: post
 title: 2020 Multi-University Training Contest 2 Total Eclipse
 subtitle: 1001.Total Eclipse
-header-img: https://img2022.cnblogs.com/blog/479918/202206/479918-20220603151526503-1173993291.png
+header-img: 
 header-style: text
 catalog: true
 tags:
@@ -11,8 +11,9 @@ tags:
 
 ## 1001.Total Eclipse
 [题目链接-1001.Total Eclipse](http://acm.hdu.edu.cn/showproblem.php?pid=6763)
-![](https://img-blog.csdnimg.cn/20200728005711651.png)
-![](https://img-blog.csdnimg.cn/2020072800571938.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/d18a7f7f-c5e9-47b8-bd01-4d30d44c29b3)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/83651933-3809-41ed-a83b-077ad3d7d8be)
+
 **题目大意**
 
 $n$个点$m$条边的无向图，每个点有一个正点权，每次选择一个连通子图，将里面的权值都减$1$，求所有点权为$0$的最小操作次数
