@@ -28,7 +28,8 @@ header-img:
     <div class="post-preview-img">
       <a href="{{ post.url | prepend: site.baseurl }}">
         {% if post.header-img.includes("http") %}
-          <img src="{{ post.header-img }}" class="cover">
+          <h3 class="post-subtitle">{{ post.header-img }}</h3>
+<!--           <img src="{{ post.header-img }}" class="cover"> -->
         {% else %}
           <img src="{{ _assets_baseurl }}/{{ post.header-img }}" class="cover">
         {% endif %}
