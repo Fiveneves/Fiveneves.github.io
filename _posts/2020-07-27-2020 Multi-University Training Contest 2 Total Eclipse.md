@@ -11,7 +11,6 @@ tags:
 
 ## 1001.Total Eclipse
 [题目链接-1001.Total Eclipse](http://acm.hdu.edu.cn/showproblem.php?pid=6763)
-![](/img/home-bg/3.jpg)
 ![](https://img-blog.csdnimg.cn/20200728005711651.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0ZpdmVuZXZlcw==,size_16,color_FFFFFF,t_70)
 ![](https://img-blog.csdnimg.cn/2020072800571938.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0ZpdmVuZXZlcw==,size_16,color_FFFFFF,t_70)
 **题目大意**
