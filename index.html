@@ -27,7 +27,7 @@ header-img:
     {% if site.theme_style.post_preview != "text" %}
     <div class="post-preview-img">
       <a href="{{ post.url | prepend: site.baseurl }}">
-        {% if "http" in post.header-img %}
+        {% if post.header-img.startsWith("http") %}
           <img src="{{{ post.header-img }}" class="cover">
         {% else %}
           <img src="{{ _assets_baseurl }}/{{ post.header-img }}" class="cover">
