@@ -2,7 +2,7 @@
 layout: post
 title: 2020 Multi-University Training Contest 2 Total Eclipse
 subtitle: 1001.Total Eclipse
-header-img: 
+header-img: img/in-post/2020-07-27/header.jpg
 header-style: text
 catalog: true
 tags:
