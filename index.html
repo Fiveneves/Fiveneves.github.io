@@ -27,10 +27,10 @@ header-img:
     {% if site.theme_style.post_preview != "text" %}
     <div class="post-preview-img">
       <a href="{{ post.url | prepend: site.baseurl }}">
-        {% if post.header-img.includes("http") %}
+        {% if post.header-img.startsWith("http") %}
           <img src="{{ post.header-img }}" class="cover">
-<!--         {% else %}
-          <img src="{{ _assets_baseurl }}/{{ post.header-img }}" class="cover"> -->
+        {% else %}
+          <img src="{{ _assets_baseurl }}/{{ post.header-img }}" class="cover">
         {% endif %}
       </a>
       <div class="else">
