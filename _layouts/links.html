@@ -12,7 +12,7 @@ layout: default
 
 <div class="links-page container">
   <div class="link-list">
-    {% assign _default_img = "/img/links/default.jpg" | prepend: _assets_baseurl %}
+    {% assign _default_icon = "fa-spinner" %}
 
     {% if page.links %}
       {% for group in page.links %}
@@ -21,13 +21,13 @@ layout: default
           {% for item in group.items %}
             <li>
               <a href="{{ item.url }}" target="_blank">
-                {% if item.img %}
-                  {% assign _img = item.img | prepend: _assets_baseurl %}
+                {% if item.icon %}
+                  {% assign _icon = item.icon %}
                 {% else %}
-                  {% assign _img = _default_img %}
+                  {% assign _icon = _default_icon %}
                 {% endif %}
 <!--                 <img src="{{ _img }}"> -->
-                <i class="fab fa-github fa-4x"></i>
+                <i class="fab fa-{{_icon}} fa-4x"></i>
                 <span class="sitename">{{item.sitename}}</span>
                 <div class="desc">{{item.desc}}</div>
               </a>
