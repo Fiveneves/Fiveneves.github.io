@@ -77,13 +77,5 @@
   <!-- I have compressed all js dependencies into `lib.min.js` using jsDelivr -->
   <script src="{{ "/js/lib.min.js" | prepend: _assets_baseurl }}"></script>
 
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-        inlineMath: [['$','$']]
-        }
-    });
-</script>
-<script src="{{ _cdn.mathjax }}" type="text/javascript"></script>
+  
 </head>
