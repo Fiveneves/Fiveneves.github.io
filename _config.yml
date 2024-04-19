@@ -57,11 +57,11 @@ sns:
   RSS: true
   github_username: Fiveneves
   weibo_username:
-  zhihu_username: chao-neng-gui-su
-  twitter_username: renovamen_zxh
-  facebook_username: renovamen.zou
-  linkedin_username: xiaohan-zou-55bba0160
-  email_address: renovamenzxh@gmail.com
+  zhihu_username: 
+  twitter_username: 
+  facebook_username: 
+  linkedin_username: 
+  email_address: 
 
 
 # Build settings
@@ -104,13 +104,13 @@ menus:
     font: fab fa-fort-awesome
     url: /
   - title: About
-    font: fas fa-paw
+    font: fas fa-id-card-o
     submenus:
       - title: Me
-        font: fas fa-user-astronaut
+        font: fas fa-user-circle-o
         url: /about/
       - title: Theme
-        font: fas fa-meteor
+        font: fas fa-file-text
         url: /theme/
   - title: Archive
     font: fas fa-archive
