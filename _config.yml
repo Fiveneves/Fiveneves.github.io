@@ -104,13 +104,13 @@ menus:
     font: fab fa-fort-awesome
     url: /
   - title: About
-    font: fas fa-id-card-o
+    font: fas fa-id-card
     submenus:
       - title: Me
-        font: fas fa-user-circle-o
+        font: fas fa-user
         url: /about/
       - title: Theme
-        font: fas fa-file-text
+        font: fas fa-file-lines
         url: /theme/
   - title: Archive
     font: fas fa-archive
