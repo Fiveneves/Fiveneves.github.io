@@ -77,7 +77,7 @@
   <!-- I have compressed all js dependencies into `lib.min.js` using jsDelivr -->
   <script src="{{ "/js/lib.min.js" | prepend: _assets_baseurl }}"></script>
 
-<!--   <script type="text/x-mathjax-config">
+  <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
@@ -85,5 +85,5 @@
         }
     });
 </script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> -->
+<script src="{{ _cdn.mathjax }}" type="text/javascript"></script>
 </head>
