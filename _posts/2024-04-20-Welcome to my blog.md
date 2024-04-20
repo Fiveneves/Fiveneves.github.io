@@ -1,3 +1,12 @@
+---
+layout: post
+title: Welcome to my blog
+subtitle: This is a report of assignment_1
+header-img: img/in-post/2024-04-20/header.jpg
+header-style: text
+catalog: true
+tags:
+---
 
 ## 一. 博客主题及其选取原因
 
