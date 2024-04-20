@@ -56,12 +56,12 @@ collections:
 sns:
   RSS: true
   github_username: Fiveneves
-  weibo_username:
-  zhihu_username: 
+  weibo_username: Fiveneves
+  zhihu_username: Fiveneves
   twitter_username: 
   facebook_username: 
   linkedin_username: 
-  email_address: 
+  email_address: 51265903031@stu.ecnu.edu.cn
 
 
 # Build settings
