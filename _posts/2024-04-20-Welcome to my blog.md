@@ -4,7 +4,7 @@ title: Welcome to my blog
 subtitle: This is a report of assignment_1
 header-img: img/in-post/2024-04-20/header.jpg
 header-style: text
-catalog: true
+catalog: image
 tags:
 ---
 
