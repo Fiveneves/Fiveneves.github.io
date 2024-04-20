@@ -15,7 +15,7 @@ repository_branch: main
 
 # Theme style settings
 theme_style:
-  highlight: light 
+  highlight:
                 # "dark" (default), "light"
   alert:        # "flat" (default), "modern"
   post_preview: 
