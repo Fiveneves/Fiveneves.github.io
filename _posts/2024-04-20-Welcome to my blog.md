@@ -58,11 +58,11 @@ menus:
 
 ③ 在发布时间上对文章进行排序
 
-![image-20240411194931999](D:\Markdown\Fiveneves.github.io.assets\image-20240411194931999.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/fdbd04e4-f847-46f8-ab8e-b1c04fc64592)
 
-![image-20240414160611738](D:\Markdown\Fiveneves.github.io.assets\image-20240414160614706.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/b090a24c-e32c-470d-b343-d38e6eb6ccad)
 
-![image-20240414162535631](D:\Markdown\Fiveneves.github.io.assets\image-20240414162535631.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/79797252-add0-424f-b7c6-4bbe01256f1c)
 
 ## Client ID
 
@@ -196,11 +196,11 @@ RubyInstaller 是一个独立的基于 Windows 的安装程序，包括 Ruby 语
 2. 在安装向导的最后阶段运行该步骤。这是使用本机安装 Gem 所必需的 扩展。您可以在 [RubyInstaller 文档](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system)中找到有关此内容的其他信息。 从选项中选择 。`ridk install``MSYS2 and MINGW development tool chain`
 3. 从“开始”菜单打开新的命令提示符窗口，以便对环境变量的更改生效。 使用 Jekyll 和 Bundler 安装`PATH``gem install jekyll bundler`
 
-![image-20240411205826580](D:\Markdown\Fiveneves.github.io.assets\image-20240411205826580.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/bfe04322-26e9-472c-b806-c599e241560d)
 
 1. 检查 Jekyll 是否已正确安装：`jekyll -v`
 
-![image-20240411205839190](D:\Markdown\Fiveneves.github.io.assets\image-20240411205839190.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/db9a1651-12b4-474c-a5a6-e3eac4a2e10e)
 
 
 
@@ -211,5 +211,5 @@ RubyInstaller 是一个独立的基于 Windows 的安装程序，包括 Ruby 语
 解决方法：
 
 查看官方文档[加载和配置 MathJax — MathJax 2.7 文档](https://docs.mathjax.org/en/v2.7-latest/configuration.html#)，在_includes/enhancements/mathjax.html内联配置中修改行内公式和行间公式规则
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/ac6d875d-8ee9-4ea3-ad39-ab4739f0aa3d)
 
-![image-20240419094349506](D:\Markdown\Fiveneves.github.io.assets\image-20240419094349506.png)
