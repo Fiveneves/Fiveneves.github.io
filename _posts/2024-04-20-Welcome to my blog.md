@@ -32,6 +32,8 @@ Jekyll框架 gungnir主题
 
 博客详情页
 博客详情页与首页大致相同，不同之处在于博客列表区域被替换为了博客详情页，右侧的汇总信息增加了当前博客的目录结构，目录结构也可选择不显示。
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/638560e9-e265-4325-bf91-d7f9961996a6)
+
 
 ```
 # Navigation menu settings
