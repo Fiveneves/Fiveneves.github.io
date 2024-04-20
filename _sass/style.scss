@@ -466,22 +466,16 @@ img::-moz-selection {
 }
 
 /* Hux make all img responsible in post-container */
-// .post-container img {
-//   display: block;
-//   max-width: 100%;
-//   height: auto;
-//   margin: 1.5em auto 1.6em auto;
-// }
-.post-container img {     
-  /* 图片居中 */    
-  clear: both;    
-  margin: 0 auto;    
-  display: block;    
-  /* 添加图片阴影 */    
+.post-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5em auto 1.6em auto;
   box-shadow:0px 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;    
   webkit-box-shadow:0px 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;  
   moz-box-shadow:0px 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;  
-  o-box-shadow:0px 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;}
+  o-box-shadow:0px 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+}
 
 /* Renovamen: emoji img is an exception */
 .post-container .emoji,
