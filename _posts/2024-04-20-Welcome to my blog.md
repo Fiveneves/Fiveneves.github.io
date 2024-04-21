@@ -1,4 +1,4 @@
-![image-20240414160614706](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/aa072342-d724-4778-90d2-f25e4d1769ab)---
+---
 layout: post
 title: Welcome to my blog
 subtitle: This is a report of assignment_1
