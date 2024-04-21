@@ -286,7 +286,7 @@ gem install jemoji
 
 示例：
 
-`斜眼笑`{:.emoji-plus} `doge`{:.emoji-plus} `白眼`{:.emoji-plus}
+:smile: :smirk: :racehorse: :wolf:
 
 ```markdown
 `斜眼笑`{:.emoji-plus} `doge`{:.emoji-plus} `白眼`{:.emoji-plus}
