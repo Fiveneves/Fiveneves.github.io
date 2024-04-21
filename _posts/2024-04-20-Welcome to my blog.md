@@ -125,8 +125,14 @@ post_preview: # "image" (default), "text"
 
 ![post_preview为image的页面](/assets/Welcome to my blog/image-20240421014016281.png)
 
+post_preview为image的页面
+{:.desc}
+
 
 ![post_preview为text的页面](/assets/Welcome to my blog/image-20240420233923926.png)
+
+post_preview为text的页面
+{:.desc}
 
 ### 社交链接
 
@@ -141,6 +147,17 @@ sns:
   email_address: # 邮件地址
 ```
 填入用户名或用户 ID 后，社交链接会出现在首页封面和 About 页上。
+
+### 一言
+
+```yaml
+hitokoto: true # default: false
+```
+
+将 `hitokoto` 设为 `true` 可以开启首页的[一言](https://hitokoto.cn/){:target="_blank"}气泡，将鼠标悬浮在头像上气泡就会显示出来：
+
+![Hitokoto Bubble](../img/docs/hitokoto-bubble.jpg)
+
 
 
 ### 评论功能
@@ -455,7 +472,7 @@ gem install jemoji
 ![image](/assets/Welcome to my blog/image-20240414160614706.png)
 
 
-从 GitHub 克隆项目：
+### 从 GitHub 克隆项目
 
 ```bash
 git clone https://github.com/Renovamen/jekyll-theme-gungnir.git
@@ -474,6 +491,8 @@ bundle install
 ```bash
 bundle exec jekyll serve --watch
 ```
+
+### 推送到远程仓库
 
 
 ## 四. 技术选择
