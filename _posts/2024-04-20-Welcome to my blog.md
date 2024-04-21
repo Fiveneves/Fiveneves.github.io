@@ -73,13 +73,110 @@ tags:
 
 ⑤ 可以通过登录github帐号对文章进行评论
 
+### 文章
 
-![image](/assets/Welcome to my blog/image-20240421014016281.png)
+把要发布的文章放在 `_posts/` 文件夹中，文件名格式为 `年-月-日-标题.md`，然后配置其 YAML Front-matter：
+
+```yaml
+---
+layout: post
+title: # 文章标题
+subtitle: # 副标题
+author: # 作者名称，默认为网站名称
+header-img: # 文章封面图
+header-mask: # 封面图遮罩，格式：rgba(40, 57, 101, .4)
+header-style: text # 如果不想该文章显示封面图，就需要加这一项
+catalog: # 是否显示目录：false (default), true
+math: # 是否开启数学公式渲染
+tags: # 标签
+  - 标签1
+  - 标签2
+  - ...
+---
+```
+
+其中 `header-img` 会同时显示在[首页](#首页文章列表)和文章页。`math` 的配置可以参考[这里](#数学公式渲染)。
+
+### 导航菜单
+
+一级菜单的配置如下：
+
+```yaml
+menus:
+  - title: Home
+    font: fab fa-fort-awesome
+    url: /
+  - title: Archive
+    font: fas fa-archive
+    url: /archive/
+```
+
+需要填入每个页面的名称、路径和图标。图标库使用了 [Font Awesome](https://fontawesome.com/)，可以在[这里](https://fontawesome.com/icons)查找图标。
+
+如果要添加**二级菜单**，则需要在需要添加二级菜单的一级菜单下添加 `submenus` 关键字，然后在 `submenus` 下填入每个二级菜单页面的名称、路径和图标：
+
+```yaml
+menus:
+  - title: About
+    font: fas fa-paw
+    submenus:
+      - title: Me
+        font: fas fa-user-astronaut
+        url: /about/
+```
+
+#### 首页文章列表
+
+首页文章列表是否显示特征图片，`image` 为显示（默认），`text` 为不显示：
+
+```yaml
+post_preview: # "image" (default), "text"
+```
+
+![post_preview为image的页面](/assets/Welcome to my blog/image-20240421014016281.png)
 
 
-![image](/assets/Welcome to my blog/image-20240420233923926.png)
+![post_preview为text的页面](/assets/Welcome to my blog/image-20240420233923926.png)
+
+### 社交链接
+
+```yaml
+sns:
+  github_username: # Github
+  weibo_username: # 微博
+  zhihu_username: # 知乎
+  twitter_username: # 推特  
+  facebook_username: # Facebook
+  linkedin_username:  # 领英
+  email_address: # 邮件地址
+```
+填入用户名或用户 ID 后，社交链接会出现在首页封面和 About 页上。
 
 
+### 评论功能
+
+支持三种评论系统：Disqus、Gitalk 和 Valine。需要在 `provider` 中填入想要启用的评论系统的名字，如果不想用启用评论就填 `false` 或不填。
+
+##### Gitalk
+
+注册一个 [Github Application](https://github.com/settings/applications/new) 并搞到 Client ID 和 Client Secret，然后填入对应信息：
+![image](/assets/Welcome to my blog/image-20240414162535631.png)
+
+```yaml
+comment: 
+  provider: gitalk
+  gitalk:
+    clientID: # Github Application Client ID
+    clientSecret: # Github Application Client Secret
+    repo: # 用来放评论的 Github 仓库
+    owner: # 上述 Github 仓库的拥有者 ID
+    admin: 
+      - 管理员1
+      - 管理员2
+      - ...
+```
+
+此处参考 [Gitalk 文档](https://github.com/gitalk/gitalk)
 
 
 ### Markdown 附加功能
@@ -388,56 +485,6 @@ bundle install
 bundle exec jekyll serve --watch
 ```
 
-### 导航菜单
-
-一级菜单的配置如下：
-
-```yaml
-menus:
-  - title: Home
-    font: fab fa-fort-awesome
-    url: /
-  - title: Archive
-    font: fas fa-archive
-    url: /archive/
-```
-
-需要填入每个页面的名称、路径和图标。图标库使用了 [Font Awesome](https://fontawesome.com/)，可以在[这里](https://fontawesome.com/icons)查找图标。
-
-如果要添加**二级菜单**，则需要在需要添加二级菜单的一级菜单下添加 `submenus` 关键字，然后在 `submenus` 下填入每个二级菜单页面的名称、路径和图标：
-
-```yaml
-menus:
-  - title: About
-    font: fas fa-paw
-    submenus:
-      - title: Me
-        font: fas fa-user-astronaut
-        url: /about/
-```
-
-### 评论功能
-
-#### Gitalk
-
-注册一个 [Github Application](https://github.com/settings/applications/new) 并搞到 Client ID 和 Client Secret，然后填入对应信息：
-![image](/assets/Welcome to my blog/image-20240414162535631.png)
-
-```yaml
-comment: 
-  provider: gitalk
-  gitalk:
-    clientID: # Github Application Client ID
-    clientSecret: # Github Application Client Secret
-    repo: # 用来放评论的 Github 仓库
-    owner: # 上述 Github 仓库的拥有者 ID
-    admin: 
-      - 管理员1
-      - 管理员2
-      - ...
-```
-
-此处参考 [Gitalk 文档](https://github.com/gitalk/gitalk)
 
 ## 四. 技术选择
 
