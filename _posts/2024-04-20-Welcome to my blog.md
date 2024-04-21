@@ -1,4 +1,4 @@
----
+![image-20240414160614706](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/aa072342-d724-4778-90d2-f25e4d1769ab)---
 layout: post
 title: Welcome to my blog
 subtitle: This is a report of assignment_1
@@ -466,10 +466,31 @@ gem install jemoji
 ## 三. 搭建过程
 
 ### 创建github仓库
+
+项目名称为userName.github.io
 ![image](/assets/Welcome to my blog/image-20240411194931999.png)
 
 
 ![image](/assets/Welcome to my blog/image-20240414160614706.png)
+
+### 本地环境配置
+
+通过 RubyInstaller 安装[固定链接](https://jekyllrb.com/docs/installation/windows/#installation-via-rubyinstaller)
+
+安装 Ruby 和 Jekyll 的最简单方法是使用适用于 Windows 的 [RubyInstaller](https://rubyinstaller.org/)。
+
+RubyInstaller 是一个独立的基于 Windows 的安装程序，包括 Ruby 语言、执行环境、 重要文档等。
+
+1. 从 [RubyInstaller 下载](https://rubyinstaller.org/downloads/)下载并安装 **Ruby+Devkit** 版本。 使用默认选项进行安装。
+2. 在安装向导的最后阶段运行该步骤。这是使用本机安装 Gem 所必需的 扩展。您可以在 [RubyInstaller 文档](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system)中找到有关此内容的其他信息。 从选项中选择 。`ridk install``MSYS2 and MINGW development tool chain`
+3. 从“开始”菜单打开新的命令提示符窗口，以便对环境变量的更改生效。 使用 Jekyll 和 Bundler 安装`PATH``gem install jekyll bundler`
+
+![image](/assets/Welcome to my blog/image-20240411205826580.png)
+
+
+检查 Jekyll 是否已正确安装：`jekyll -v`
+
+![image](/assets/Welcome to my blog/image-20240411205839190.png)
 
 
 ### 从 GitHub 克隆项目
@@ -492,7 +513,25 @@ bundle install
 bundle exec jekyll serve --watch
 ```
 
-### 推送到远程仓库
+### 部署到Github
+
+#### 修改 _config.yml
+
+修改网站标题、网站域名、仓库地址等配置信息
+
+![](/assets/Welcome to my blog/image-20240421220941569.png)
+
+#### 上传代码
+
+进入项目文件夹，使用以下命令将本地代码push到刚才建好的仓库中
+
+```
+git init
+git add .
+git commit -m 'origin code'
+git remote add origin https://github.com/Fiveneves/Fiveneves.github.io.git
+git push origin master 
+```
 
 
 ## 四. 技术选择
@@ -527,27 +566,14 @@ bundle exec jekyll serve --watch
 
 ## 五. 遇到的问题及其解决方法
 
-### 1. 本地环境配置
+### 1. 本地启动失败
 
-通过 RubyInstaller 安装[固定链接](https://jekyllrb.com/docs/installation/windows/#installation-via-rubyinstaller)
+问题：使用`jekyll serve --host 0.0.0.0`命令启动失败
+解决方案：安装bundle
 
-安装 Ruby 和 Jekyll 的最简单方法是使用适用于 Windows 的 [RubyInstaller](https://rubyinstaller.org/)。
+  $ gem install bundle
 
-RubyInstaller 是一个独立的基于 Windows 的安装程序，包括 Ruby 语言、执行环境、 重要文档等。
-
-1. 从 [RubyInstaller 下载](https://rubyinstaller.org/downloads/)下载并安装 **Ruby+Devkit** 版本。 使用默认选项进行安装。
-2. 在安装向导的最后阶段运行该步骤。这是使用本机安装 Gem 所必需的 扩展。您可以在 [RubyInstaller 文档](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system)中找到有关此内容的其他信息。 从选项中选择 。`ridk install``MSYS2 and MINGW development tool chain`
-3. 从“开始”菜单打开新的命令提示符窗口，以便对环境变量的更改生效。 使用 Jekyll 和 Bundler 安装`PATH``gem install jekyll bundler`
-
-![image](/assets/Welcome to my blog/image-20240411205826580.png)
-
-
-检查 Jekyll 是否已正确安装：`jekyll -v`
-
-![image](/assets/Welcome to my blog/image-20240411205839190.png)
-
-
-
+使用`bundle exec jekyll serve --watch`命令启动
 
 ### 2. 文章展示数学公式
 
