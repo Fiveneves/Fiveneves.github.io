@@ -261,19 +261,36 @@ gem install jemoji
 :smile: :smirk: :racehorse: :wolf:
 ```
 
-##### 附加表情
+使用了 [jemoji](https://github.com/jekyll/jemoji){:target="_blank"} 插件以在文章中插入 emoji，需要手动安装这个插件：
 
-也可以在文章中插入其他表情，目前支持 Bilibili 的小电视表情 ![img](D:\Markdown\Fiveneves.github.io.assets\斜眼笑.gif)（效果出乎意料的好）。
+```bash
+gem install jemoji
+```
+
+从[这里](https://pages.github.com/versions/){:target="_blank"}可以看到 Github Pages 上自带 jemoji 插件。[这里](https://www.webfx.com/tools/emoji-cheat-sheet/){:target="_blank"}是所有 emoji 的代码。
 
 示例：
 
-![img](D:\Markdown\Fiveneves.github.io.assets\斜眼笑.gif) ![img](D:\Markdown\Fiveneves.github.io.assets\doge.gif) ![img](D:\Markdown\Fiveneves.github.io.assets\白眼.gif)
+:smile: :smirk: :racehorse: :wolf:
+
+```markdown
+:smile: :smirk: :racehorse: :wolf:
+```
+
+##### 附加表情
+
+也可以在文章中插入其他表情，目前支持 Bilibili 的小电视表情 `斜眼笑`{:.emoji-plus}（效果出乎意料的好）。
+
+示例：
+
+`斜眼笑`{:.emoji-plus} `doge`{:.emoji-plus} `白眼`{:.emoji-plus}
 
 ```markdown
 `斜眼笑`{:.emoji-plus} `doge`{:.emoji-plus} `白眼`{:.emoji-plus}
 ```
 
-[附录](https://jekyll-theme-gungnir.vercel.app/theme/#附录)是所有支持的小电视表情和它们对应的代码，表情源文件来源于[这里](https://www.bilibili.com/video/av27621778/)。
+[附录](#附录)是所有支持的小电视表情和它们对应的代码，表情源文件来源于[这里](https://www.bilibili.com/video/av27621778/){:target="_blank"}。
+
 
 ![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/5ae30771-c02c-44f9-9074-b27868bcb0bc)
 
