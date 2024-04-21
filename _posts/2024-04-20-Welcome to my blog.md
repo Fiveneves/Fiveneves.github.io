@@ -69,10 +69,15 @@ tags:
 
 ③ 在发布时间上对文章进行排序
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/414c67a9-5a71-4160-8067-4f8c6c89742c)
+④ 可以通过关键词搜索文章
+
+⑤ 可以通过登录github帐号对文章进行评论
 
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/785835e4-abc0-41e9-9776-bc46b7eadcba)
+![image](/assets/Welcome to my blog/image-20240421014016281.png)
+
+
+![image](/assets/Welcome to my blog/image-20240420233923926.png)
 
 
 
@@ -265,20 +270,34 @@ classDiagram
 
 #### 标签
 
-```
-消息标签
 `消息标签`{:.info}
-成功标签
+
+```markdown
+`消息标签`{:.info}
+```
+
 `成功标签`{:.success}
-警告标签
+
+```markdown
+`成功标签`{:.success}
+```
+
 `警告标签`{:.warning}
-错误标签
+
+```markdown
+`警告标签`{:.warning}
+```
+
+`错误标签`{:.error}
+
+```markdown
 `错误标签`{:.error}
 ```
 
 #### 提示
 
 消息提示文案
+{:.info}
 
 ```markdown
 消息提示文案
@@ -286,6 +305,7 @@ classDiagram
 ```
 
 成功提示文案
+{:.success}
 
 ```markdown
 成功提示文案
@@ -293,6 +313,7 @@ classDiagram
 ```
 
 警告提示文案
+{:.warning}
 
 ```markdown
 警告提示文案
@@ -300,6 +321,7 @@ classDiagram
 ```
 
 错误提示文案
+{:.error}
 
 ```markdown
 错误提示文案
@@ -307,24 +329,7 @@ classDiagram
 ```
 
 #### 表情
-
 ##### emoji
-
-使用了 [jemoji](https://github.com/jekyll/jemoji) 插件以在文章中插入 emoji，需要手动安装这个插件：
-
-```bash
-gem install jemoji
-```
-
-从[这里](https://pages.github.com/versions/)可以看到 Github Pages 上自带 jemoji 插件。[这里](https://www.webfx.com/tools/emoji-cheat-sheet/)是所有 emoji 的代码。
-
-示例：
-
-![:smile:](D:\Markdown\Fiveneves.github.io.assets\1f604.png) ![:smirk:](D:\Markdown\Fiveneves.github.io.assets\1f60f.png) ![:racehorse:](D:\Markdown\Fiveneves.github.io.assets\1f40e.png) ![:wolf:](D:\Markdown\Fiveneves.github.io.assets\1f43a.png)
-
-```markdown
-:smile: :smirk: :racehorse: :wolf:
-```
 
 使用了 [jemoji](https://github.com/jekyll/jemoji){:target="_blank"} 插件以在文章中插入 emoji，需要手动安装这个插件：
 
@@ -348,22 +353,20 @@ gem install jemoji
 
 示例：
 
-:smile: :smirk: :racehorse: :wolf:
+`斜眼笑`{:.emoji-plus} `doge`{:.emoji-plus} `白眼`{:.emoji-plus}
 
 ```markdown
 `斜眼笑`{:.emoji-plus} `doge`{:.emoji-plus} `白眼`{:.emoji-plus}
 ```
 
-[附录](#附录)是所有支持的小电视表情和它们对应的代码，表情源文件来源于[这里](https://www.bilibili.com/video/av27621778/){:target="_blank"}。
+
+![image](/assets/Welcome to my blog/image-20240411194931999.png)
 
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/5ae30771-c02c-44f9-9074-b27868bcb0bc)
+![image](/assets/Welcome to my blog/image-20240414160614706.png)
 
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/8ed2880e-5de0-4acd-a6e0-544bc5b4ee47)
-
-
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/57168d07-88a7-4d80-89f1-6cc2f5ca5847)
+![image](/assets/Welcome to my blog/image-20240414162535631.png)
 
 
 从 GitHub 克隆项目：
@@ -486,12 +489,12 @@ RubyInstaller 是一个独立的基于 Windows 的安装程序，包括 Ruby 语
 2. 在安装向导的最后阶段运行该步骤。这是使用本机安装 Gem 所必需的 扩展。您可以在 [RubyInstaller 文档](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system)中找到有关此内容的其他信息。 从选项中选择 。`ridk install``MSYS2 and MINGW development tool chain`
 3. 从“开始”菜单打开新的命令提示符窗口，以便对环境变量的更改生效。 使用 Jekyll 和 Bundler 安装`PATH``gem install jekyll bundler`
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/88ef63da-b32c-4a98-aba8-0a23b1c0edf9)
+![image](/assets/Welcome to my blog/image-20240411205826580.png)
 
 
 检查 Jekyll 是否已正确安装：`jekyll -v`
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/dec20c2f-4812-4888-a591-2087d2bed455)
+![image](/assets/Welcome to my blog/image-20240411205839190.png)
 
 
 
@@ -502,5 +505,5 @@ RubyInstaller 是一个独立的基于 Windows 的安装程序，包括 Ruby 语
 
 解决方法：查看官方文档[加载和配置 MathJax — MathJax 2.7 文档](https://docs.mathjax.org/en/v2.7-latest/configuration.html#)，在_includes/enhancements/mathjax.html内联配置中修改行内公式和行间公式规则
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/f8c162eb-9e53-44eb-b7c0-09a2a40c5be2)
+![image](/assets/Welcome to my blog/image-20240419094349506.png)
 
