@@ -26,31 +26,38 @@ tags:
 
 首页由顶部导航栏、博客简介、个人博客列表组成，右下角有light/reading/night切换、回到顶部和回到底部功能，同时以百分比的形式显示当前观看进度。
 
-![image-20240420234013266](D:\Markdown\Fiveneves.github.io.assets\image-20240420234013266.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/60639443-0da2-4794-b1d2-3be21951eec7)
 
-![image-20240421014016281](D:\Markdown\Fiveneves.github.io.assets\image-20240421014016281.png)
+
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/232d7c7c-30e2-47c3-9204-0dcff4da038c)
+
 
 ### 关于
 
-![image-20240420234104205](D:\Markdown\Fiveneves.github.io.assets\image-20240420234104205.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/97b0bd3c-a842-4c9e-9758-700ea42f112a)
+
 
 ### 归档
 
-![image-20240420234534052](D:\Markdown\Fiveneves.github.io.assets\image-20240420234534052.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/f26444e2-a643-40a6-83bc-728639f187cd)
+
 
 ### 链接
 
-![image-20240420234601304](D:\Markdown\Fiveneves.github.io.assets\image-20240420234601304.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/487e0446-3a20-4e90-afd2-89724013cac9)
+
 
 ### 搜索
 
-![image-20240420234636150](D:\Markdown\Fiveneves.github.io.assets\image-20240420234636150.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/e66bab7b-cb79-4c40-813b-918a58e60ca1)
+
 
 ### 详情页
 
 和首页布局基本一致，把首页的博客简介替换成了文章简介，文章列表替换成了文章内容，右边还添加了文章目录，可以快速索引定位。
 
-![image-20240421184454561](D:\Markdown\Fiveneves.github.io.assets\image-20240421184454561.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/1731db9b-0285-4e47-a0ce-eb0fd84ada99)
+
 
 ## 二. 功能实现
 
@@ -62,9 +69,11 @@ tags:
 
 ③ 在发布时间上对文章进行排序
 
-![image-20240420233505296](D:\Markdown\Fiveneves.github.io.assets\image-20240420233505296.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/414c67a9-5a71-4160-8067-4f8c6c89742c)
 
-![image-20240420233923926](D:\Markdown\Fiveneves.github.io.assets\image-20240420233923926.png)
+
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/785835e4-abc0-41e9-9776-bc46b7eadcba)
+
 
 
 
@@ -266,11 +275,14 @@ gem install jemoji
 
 [附录](https://jekyll-theme-gungnir.vercel.app/theme/#附录)是所有支持的小电视表情和它们对应的代码，表情源文件来源于[这里](https://www.bilibili.com/video/av27621778/)。
 
-![image-20240411194931999](D:\Markdown\Fiveneves.github.io.assets\image-20240411194931999.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/5ae30771-c02c-44f9-9074-b27868bcb0bc)
 
-![image-20240414160611738](D:\Markdown\Fiveneves.github.io.assets\image-20240414160614706.png)
 
-![image-20240414162535631](D:\Markdown\Fiveneves.github.io.assets\image-20240414162535631.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/8ed2880e-5de0-4acd-a6e0-544bc5b4ee47)
+
+
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/57168d07-88a7-4d80-89f1-6cc2f5ca5847)
+
 
 从 GitHub 克隆项目：
 
@@ -392,11 +404,13 @@ RubyInstaller 是一个独立的基于 Windows 的安装程序，包括 Ruby 语
 2. 在安装向导的最后阶段运行该步骤。这是使用本机安装 Gem 所必需的 扩展。您可以在 [RubyInstaller 文档](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system)中找到有关此内容的其他信息。 从选项中选择 。`ridk install``MSYS2 and MINGW development tool chain`
 3. 从“开始”菜单打开新的命令提示符窗口，以便对环境变量的更改生效。 使用 Jekyll 和 Bundler 安装`PATH``gem install jekyll bundler`
 
-![image-20240411205826580](D:\Markdown\Fiveneves.github.io.assets\image-20240411205826580.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/88ef63da-b32c-4a98-aba8-0a23b1c0edf9)
+
 
 检查 Jekyll 是否已正确安装：`jekyll -v`
 
-![image-20240411205839190](D:\Markdown\Fiveneves.github.io.assets\image-20240411205839190.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/dec20c2f-4812-4888-a591-2087d2bed455)
+
 
 
 
@@ -406,4 +420,5 @@ RubyInstaller 是一个独立的基于 Windows 的安装程序，包括 Ruby 语
 
 解决方法：查看官方文档[加载和配置 MathJax — MathJax 2.7 文档](https://docs.mathjax.org/en/v2.7-latest/configuration.html#)，在_includes/enhancements/mathjax.html内联配置中修改行内公式和行间公式规则
 
-![image-20240419094349506](D:\Markdown\Fiveneves.github.io.assets\image-20240419094349506.png)
+![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/f8c162eb-9e53-44eb-b7c0-09a2a40c5be2)
+
