@@ -359,14 +359,13 @@ gem install jemoji
 `斜眼笑`{:.emoji-plus} `doge`{:.emoji-plus} `白眼`{:.emoji-plus}
 ```
 
+## 三. 搭建过程
 
+### 创建github仓库
 ![image](/assets/Welcome to my blog/image-20240411194931999.png)
 
 
 ![image](/assets/Welcome to my blog/image-20240414160614706.png)
-
-
-![image](/assets/Welcome to my blog/image-20240414162535631.png)
 
 
 从 GitHub 克隆项目：
@@ -422,6 +421,7 @@ menus:
 #### Gitalk
 
 注册一个 [Github Application](https://github.com/settings/applications/new) 并搞到 Client ID 和 Client Secret，然后填入对应信息：
+![image](/assets/Welcome to my blog/image-20240414162535631.png)
 
 ```yaml
 comment: 
@@ -439,19 +439,13 @@ comment:
 
 此处参考 [Gitalk 文档](https://github.com/gitalk/gitalk)
 
-## 三. 技术选择
+## 四. 技术选择
 
 ### Jekyll
 
 1. **简单易用**：Jekyll是一个简单易用的静态网站生成器，特别适合用来搭建博客。它使用Markdown语法编写文章，生成静态网页，无需复杂的后台配置。
 2. **快速部署**：Github Pages提供了免费的静态网站托管服务，可以直接将Jekyll生成的静态网页部署到Github上，无需购买额外的主机服务。
 3. **社区支持**：Jekyll有庞大的社区支持，有大量的文档和教程可供参考，遇到问题时可以很容易地找到解决方案。
-
-- **GitHub Pages**: 利用GitHub Pages进行博客的托管，保证了网站的稳定性和访问速度。
-- 
-- **Markdown**: 通过Markdown编写博客内容，保证了内容的可读性和编写效率。
-
-
 
 ### CSS
 
