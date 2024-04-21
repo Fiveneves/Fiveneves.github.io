@@ -8,61 +8,51 @@ catalog: true
 tags:
 ---
 
-## 一. 博客主题及其选取原因
 
-Jekyll框架 gungnir主题
+## 一. 博客简介
 
-## 二. 博客页面布局及其设计思路
+主要记录一些奇思妙想和算法学习、论文阅读笔记。
 
-博客分为首页，归档，关于和搜索等页面。
+| 页面    | 内容                                              |
+| ------- | ------------------------------------------------- |
+| Home    | 展示博客简介和最新博客文章                        |
+| About   | 个人介绍、教育背景、项目和论文情况。              |
+| Archive | 对所有博客以日期进行归档划分，支持通过tag分类筛选 |
+| Links   | 友情链接，可以展示自己其他平台的链接              |
+| Search  | 搜索功能，根据关键词搜索所有满足条件的文章        |
+| Post    | 以Markdown形式展示每篇文章的详细内容              |
 
-首页：展示一定数量的博客，所有博客在归档可以有清晰的展示
+### 首页
 
-归档：对所有博客以日期进行归档划分
+首页由顶部导航栏、博客简介、个人博客列表组成，右下角有light/reading/night切换、回到顶部和回到底部功能，同时以百分比的形式显示当前观看进度。
 
-分类：根据文章的 categories 值进行划分，方便分类查阅
+![image-20240420234013266](D:\Markdown\Fiveneves.github.io.assets\image-20240420234013266.png)
 
-标签：类似分类页，可依据标签页进行方便的查找
+![image-20240421014016281](D:\Markdown\Fiveneves.github.io.assets\image-20240421014016281.png)
 
-关于：自我展示页
+### 关于
 
-首页由顶部导航栏、顶部横幅、博客列表、汇总信息组成，左下角有音乐播放器，右下角有搜索功能和light/night切换等功能，下滑后还有回到顶部功能。修改后的博客页面基本保留了原有样式，在原基础上增添了“关于”页面，给出了博客作者的相关信息，删除了不需要的“好伙伴”页面和“链接”页面，除此之外对全部图片进行了替换，并且增加了一些博客来充实整体。
+![image-20240420234104205](D:\Markdown\Fiveneves.github.io.assets\image-20240420234104205.png)
 
-当前博客首页
+### 归档
 
-博客详情页
-博客详情页与首页大致相同，不同之处在于博客列表区域被替换为了博客详情页，右侧的汇总信息增加了当前博客的目录结构，目录结构也可选择不显示。
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/638560e9-e265-4325-bf91-d7f9961996a6)
+![image-20240420234534052](D:\Markdown\Fiveneves.github.io.assets\image-20240420234534052.png)
 
+### 链接
 
-```
-# Navigation menu settings
-menus:
-  - title: Home
-    font: fab fa-fort-awesome
-    url: /
-  - title: About
-    font: fas fa-id-card-o
-    submenus:
-      - title: Me
-        font: fas fa-user-circle-o
-        url: /about/
-      - title: Theme
-        font: fas fa-file-text
-        url: /theme/
-  - title: Archive
-    font: fas fa-archive
-    url: /archive/
-  - title: Links
-    font: fas fa-link
-    url: /links/
-```
+![image-20240420234601304](D:\Markdown\Fiveneves.github.io.assets\image-20240420234601304.png)
 
+### 搜索
 
+![image-20240420234636150](D:\Markdown\Fiveneves.github.io.assets\image-20240420234636150.png)
 
-## 三. 博客功能实现及其技术选择
+### 详情页
 
-### 1. 功能实现
+和首页布局基本一致，把首页的博客简介替换成了文章简介，文章列表替换成了文章内容，右边还添加了文章目录，可以快速索引定位。
+
+![image-20240421184454561](D:\Markdown\Fiveneves.github.io.assets\image-20240421184454561.png)
+
+## 二. 功能实现
 
 本次博客主要实现了以下几个功能：
 
@@ -72,25 +62,215 @@ menus:
 
 ③ 在发布时间上对文章进行排序
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/fdbd04e4-f847-46f8-ab8e-b1c04fc64592)
+![image-20240420233505296](D:\Markdown\Fiveneves.github.io.assets\image-20240420233505296.png)
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/b090a24c-e32c-470d-b343-d38e6eb6ccad)
+![image-20240420233923926](D:\Markdown\Fiveneves.github.io.assets\image-20240420233923926.png)
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/79797252-add0-424f-b7c6-4bbe01256f1c)
 
-## Client ID
+
+### Markdown 附加功能
+
+#### 数学公式渲染
+
+支持使用 [Mathjax](https://github.com/mathjax/MathJax) 或 [Katex](https://github.com/KaTeX/KaTeX) 来在文章中渲染数学公式。
+
+Katex 渲染速度快于 Mathjax（可以参考[这里](https://katex.org/)），但支持的 Tex 公式少于 Mathjax（[这里](https://katex.org/docs/supported.html)是 Katex 支持的公式列表）。
+
+如果 `_config.yml` 中 `math.enable: false`，则只有 Front-matter 中添加了 `mathjax: true` 的文章才会开启公式渲染：
+
+```yaml
+---
+layout: post
+mathjax: true
+---
 
 ```
-f6cf3058e6bb5ed13ae3
+
+否则所有文章（包括 `post` 和 `keynote`）中都会开启此功能。
+
+示例：
+
+Inline math: 𝐸=𝑚𝑐2*E*=*m**c*2
+
+Display math:
+
+𝑖ℏ∂𝜓∂𝑡=−ℏ22𝑚(∂2∂𝑥2+∂2∂𝑦2+∂2∂𝑧2)𝜓+𝑉𝜓.*i*ℏ∂*t*∂*ψ*=2*m*−ℏ2(∂*x*2∂2+∂*y*2∂2+∂*z*2∂2)*ψ*+*V**ψ*.
+
+```plaintext
+$$ E = mc^2 $$
+ 
+$$
+i \hbar \frac{\partial \psi}{\partial t}
+= \frac{-\hbar^2}{2m} ( \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} ) \psi + V \psi
+$$
 ```
 
-## Client secrets
+#### 图表
+
+##### Chart.js
+
+使用了 [Chart.js](https://github.com/chartjs/Chart.js) 以在文章中加入可交互的图表。可以参考 [Chart.js 文档](https://www.chartjs.org/docs/latest/)来创建表格。
+
+示例：
+
+~~~chart
+```chart
+{
+    "type": "bar",
+    "data": {
+        "labels": ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        "datasets": [{
+            "label": "# of Votes",
+            "data": [12, 19, 3, 5, 2, 3],
+            "backgroundColor": [
+                "rgba(255, 99, 132, 0.2)",
+                "rgba(54, 162, 235, 0.2)",
+                "rgba(255, 206, 86, 0.2)",
+                "rgba(75, 192, 192, 0.2)",
+                "rgba(153, 102, 255, 0.2)",
+                "rgba(255, 159, 64, 0.2)"
+            ],
+            "borderColor": [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)"
+            ],
+            "borderWidth": 1
+        }]
+    },
+    "options": {
+        "scales": {
+            "yAxes": [{
+                "ticks": {
+                    "beginAtZero": true
+                }
+            }]
+        }
+    }
+}
+```
+~~~
+
+`注意`：`json` 中的 `key` 值一定要加**引号**，否则会渲染出错。
+
+##### mermaid
+
+使用了 [mermaid](https://github.com/knsv/mermaid) 以在文章中加入流程图、状态图、时序图、甘特图等。可以参考 [mermaid 文档](https://mermaid-js.github.io/mermaid/)来创建图。
+
+示例：
+
+~~~mermaid
+Animal+int age+String gender+isMammal()+mate()Duck+String beakColor+swim()+quack()Fish-int sizeInFeet-canEat()Zebra+bool is_wild+run()
+```mermaid
+classDiagram
+    Animal <|-- Duck
+    Animal <|-- Fish
+    Animal <|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+        +String beakColor
+        +swim()
+        +quack()
+    }
+    class Fish{
+        -int sizeInFeet
+        -canEat()
+    }
+    class Zebra{
+        +bool is_wild
+        +run()
+    }
+```
+~~~
+
+#### 标签
 
 ```
-3da0d7ded3205425e02e94f94a66c74b69a65c64
+消息标签
+`消息标签`{:.info}
+成功标签
+`成功标签`{:.success}
+警告标签
+`警告标签`{:.warning}
+错误标签
+`错误标签`{:.error}
 ```
 
+#### 提示
 
+消息提示文案
+
+```markdown
+消息提示文案
+{:.info}
+```
+
+成功提示文案
+
+```markdown
+成功提示文案
+{:.success}
+```
+
+警告提示文案
+
+```markdown
+警告提示文案
+{:.warning}
+```
+
+错误提示文案
+
+```markdown
+错误提示文案
+{:.error}
+```
+
+#### 表情
+
+##### emoji
+
+使用了 [jemoji](https://github.com/jekyll/jemoji) 插件以在文章中插入 emoji，需要手动安装这个插件：
+
+```bash
+gem install jemoji
+```
+
+从[这里](https://pages.github.com/versions/)可以看到 Github Pages 上自带 jemoji 插件。[这里](https://www.webfx.com/tools/emoji-cheat-sheet/)是所有 emoji 的代码。
+
+示例：
+
+![:smile:](D:\Markdown\Fiveneves.github.io.assets\1f604.png) ![:smirk:](D:\Markdown\Fiveneves.github.io.assets\1f60f.png) ![:racehorse:](D:\Markdown\Fiveneves.github.io.assets\1f40e.png) ![:wolf:](D:\Markdown\Fiveneves.github.io.assets\1f43a.png)
+
+```markdown
+:smile: :smirk: :racehorse: :wolf:
+```
+
+##### 附加表情
+
+也可以在文章中插入其他表情，目前支持 Bilibili 的小电视表情 ![img](D:\Markdown\Fiveneves.github.io.assets\斜眼笑.gif)（效果出乎意料的好）。
+
+示例：
+
+![img](D:\Markdown\Fiveneves.github.io.assets\斜眼笑.gif) ![img](D:\Markdown\Fiveneves.github.io.assets\doge.gif) ![img](D:\Markdown\Fiveneves.github.io.assets\白眼.gif)
+
+```markdown
+`斜眼笑`{:.emoji-plus} `doge`{:.emoji-plus} `白眼`{:.emoji-plus}
+```
+
+[附录](https://jekyll-theme-gungnir.vercel.app/theme/#附录)是所有支持的小电视表情和它们对应的代码，表情源文件来源于[这里](https://www.bilibili.com/video/av27621778/)。
+
+![image-20240411194931999](D:\Markdown\Fiveneves.github.io.assets\image-20240411194931999.png)
+
+![image-20240414160611738](D:\Markdown\Fiveneves.github.io.assets\image-20240414160614706.png)
+
+![image-20240414162535631](D:\Markdown\Fiveneves.github.io.assets\image-20240414162535631.png)
 
 从 GitHub 克隆项目：
 
@@ -99,7 +279,7 @@ git clone https://github.com/Renovamen/jekyll-theme-gungnir.git
 cd jekyll-theme-gungnir
 ```
 
-本地运行主题需要参考[这里](https://jekyllrb.com/docs/installation/)安装 Ruby 和 Jekyll。然后安装依赖包：
+本地运行需要参考[这里](https://jekyllrb.com/docs/installation/)安装 Ruby 和 Jekyll。然后安装依赖包：
 
 ```bash
 bundle config set path 'vendor/bundle'
@@ -110,18 +290,6 @@ bundle install
 
 ```bash
 bundle exec jekyll serve --watch
-```
-
-如果想要改动代码，你可能需要 [Node.js](https://nodejs.org/en/)，并安装 [Grunt](https://gruntjs.com/)（用于压缩 js 文件）：
-
-```bash
-npm install
-```
-
-然后：
-
-```bash
-npm run dev
 ```
 
 ### 导航菜单
@@ -152,6 +320,8 @@ menus:
         url: /about/
 ```
 
+### 评论功能
+
 #### Gitalk
 
 注册一个 [Github Application](https://github.com/settings/applications/new) 并搞到 Client ID 和 Client Secret，然后填入对应信息：
@@ -172,7 +342,19 @@ comment:
 
 此处参考 [Gitalk 文档](https://github.com/gitalk/gitalk)
 
-### 2. 技术选择
+## 三. 技术选择
+
+### Jekyll
+
+1. **简单易用**：Jekyll是一个简单易用的静态网站生成器，特别适合用来搭建博客。它使用Markdown语法编写文章，生成静态网页，无需复杂的后台配置。
+2. **快速部署**：Github Pages提供了免费的静态网站托管服务，可以直接将Jekyll生成的静态网页部署到Github上，无需购买额外的主机服务。
+3. **社区支持**：Jekyll有庞大的社区支持，有大量的文档和教程可供参考，遇到问题时可以很容易地找到解决方案。
+
+- **GitHub Pages**: 利用GitHub Pages进行博客的托管，保证了网站的稳定性和访问速度。
+- 
+- **Markdown**: 通过Markdown编写博客内容，保证了内容的可读性和编写效率。
+
+
 
 ### CSS
 
@@ -196,7 +378,7 @@ comment:
 - [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)（搜索）
 - [fastclick](https://github.com/ftlabs/fastclick)（解决移动设备上的点击延迟问题）
 
-## 四. 博客制作过程中遇到的问题及其解决方法
+## 五. 遇到的问题及其解决方法
 
 ### 1. 本地环境配置
 
@@ -210,20 +392,18 @@ RubyInstaller 是一个独立的基于 Windows 的安装程序，包括 Ruby 语
 2. 在安装向导的最后阶段运行该步骤。这是使用本机安装 Gem 所必需的 扩展。您可以在 [RubyInstaller 文档](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system)中找到有关此内容的其他信息。 从选项中选择 。`ridk install``MSYS2 and MINGW development tool chain`
 3. 从“开始”菜单打开新的命令提示符窗口，以便对环境变量的更改生效。 使用 Jekyll 和 Bundler 安装`PATH``gem install jekyll bundler`
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/bfe04322-26e9-472c-b806-c599e241560d)
+![image-20240411205826580](D:\Markdown\Fiveneves.github.io.assets\image-20240411205826580.png)
 
-1. 检查 Jekyll 是否已正确安装：`jekyll -v`
+检查 Jekyll 是否已正确安装：`jekyll -v`
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/db9a1651-12b4-474c-a5a6-e3eac4a2e10e)
+![image-20240411205839190](D:\Markdown\Fiveneves.github.io.assets\image-20240411205839190.png)
 
 
 
-博客展示数学公式
+### 2. 文章展示数学公式
 
-遇到数学公式加载不成功的情况
+问题：遇到数学公式加载不成功的情况
 
-解决方法：
+解决方法：查看官方文档[加载和配置 MathJax — MathJax 2.7 文档](https://docs.mathjax.org/en/v2.7-latest/configuration.html#)，在_includes/enhancements/mathjax.html内联配置中修改行内公式和行间公式规则
 
-查看官方文档[加载和配置 MathJax — MathJax 2.7 文档](https://docs.mathjax.org/en/v2.7-latest/configuration.html#)，在_includes/enhancements/mathjax.html内联配置中修改行内公式和行间公式规则
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/ac6d875d-8ee9-4ea3-ad39-ab4739f0aa3d)
-
+![image-20240419094349506](D:\Markdown\Fiveneves.github.io.assets\image-20240419094349506.png)
