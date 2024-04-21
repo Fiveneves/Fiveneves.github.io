@@ -111,9 +111,9 @@ menus:
       - title: Me
         font: fas fa-user
         url: /about/
-      - title: Theme
-        font: fas fa-file
-        url: /theme/
+      # - title: Theme
+      #   font: fas fa-file
+      #   url: /theme/
   - title: Archive
     font: fas fa-archive
     url: /archive/
