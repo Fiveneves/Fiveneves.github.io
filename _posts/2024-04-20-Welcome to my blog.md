@@ -26,37 +26,37 @@ tags:
 
 首页由顶部导航栏、博客简介、个人博客列表组成，右下角有light/reading/night切换、回到顶部和回到底部功能，同时以百分比的形式显示当前观看进度。
 
-![image](/assets/image-20240420234013266.png)
+![image](/assets/Welcome to my blog/image-20240420234013266.png)
 
 
-![image](/assets/image-20240420233505296.png)
+![image](/assets/Welcome to my blog/image-20240420233505296.png)
 
 
 ### 关于
 
-![image](/assets/image-20240420234104205.png)
+![image](/assets/Welcome to my blog/image-20240420234104205.png)
 
 
 ### 归档
 
-![image](/assets/image-20240420234534052.png)
+![image](/assets/Welcome to my blog/image-20240420234534052.png)
 
 
 ### 链接
 
-![image](/assets/image-20240420234601304.png)
+![image](/assets/Welcome to my blog/image-20240420234601304.png)
 
 
 ### 搜索
 
-![image](/assets/image-20240420234636150.png)
+![image](/assets/Welcome to my blog/image-20240420234636150.png)
 
 
 ### 详情页
 
 和首页布局基本一致，把首页的博客简介替换成了文章简介，文章列表替换成了文章内容，右边还添加了文章目录，可以快速索引定位。
 
-![image](/assets/image-20240421184454561.png)
+![image](/assets/Welcome to my blog/image-20240421184454561.png)
 
 
 ## 二. 功能实现
