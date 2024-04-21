@@ -26,37 +26,37 @@ tags:
 
 首页由顶部导航栏、博客简介、个人博客列表组成，右下角有light/reading/night切换、回到顶部和回到底部功能，同时以百分比的形式显示当前观看进度。
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/60639443-0da2-4794-b1d2-3be21951eec7)
+![image](/assets/image-20240420234013266.png)
 
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/232d7c7c-30e2-47c3-9204-0dcff4da038c)
+![image](/assets/image-20240420233505296.png)
 
 
 ### 关于
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/97b0bd3c-a842-4c9e-9758-700ea42f112a)
+![image](/assets/image-20240420234104205.png)
 
 
 ### 归档
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/f26444e2-a643-40a6-83bc-728639f187cd)
+![image](/assets/image-20240420234534052.png)
 
 
 ### 链接
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/487e0446-3a20-4e90-afd2-89724013cac9)
+![image](/assets/image-20240420234601304.png)
 
 
 ### 搜索
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/e66bab7b-cb79-4c40-813b-918a58e60ca1)
+![image](/assets/image-20240420234636150.png)
 
 
 ### 详情页
 
 和首页布局基本一致，把首页的博客简介替换成了文章简介，文章列表替换成了文章内容，右边还添加了文章目录，可以快速索引定位。
 
-![image](https://github.com/Fiveneves/Fiveneves.github.io/assets/75442734/1731db9b-0285-4e47-a0ce-eb0fd84ada99)
+![image](/assets/image-20240421184454561.png)
 
 
 ## 二. 功能实现
