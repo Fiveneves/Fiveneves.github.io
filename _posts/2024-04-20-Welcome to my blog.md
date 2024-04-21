@@ -99,14 +99,17 @@ mathjax: true
 
 示例：
 
-Inline math: 𝐸=𝑚𝑐2*E*=*m**c*2
+Inline math: $ E = mc^2 $
 
 Display math:
 
-𝑖ℏ∂𝜓∂𝑡=−ℏ22𝑚(∂2∂𝑥2+∂2∂𝑦2+∂2∂𝑧2)𝜓+𝑉𝜓.*i*ℏ∂*t*∂*ψ*=2*m*−ℏ2(∂*x*2∂2+∂*y*2∂2+∂*z*2∂2)*ψ*+*V**ψ*.
+$$
+i \hbar \frac{\partial \psi}{\partial t}
+= \frac{-\hbar^2}{2m} ( \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} ) \psi + V \psi
+$$
 
 ```plaintext
-$$ E = mc^2 $$
+$ E = mc^2 $
  
 $$
 i \hbar \frac{\partial \psi}{\partial t}
