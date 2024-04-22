@@ -526,9 +526,9 @@ bundle exec jekyll serve --watch
 ```
 git init
 git add .
-git commit -m 'origin code'
+git commit -m 'first commit'
 git remote add origin https://github.com/Fiveneves/Fiveneves.github.io.git
-git push origin master 
+git push origin main 
 ```
 
 
