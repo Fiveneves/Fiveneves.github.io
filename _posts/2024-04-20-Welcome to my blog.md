@@ -156,7 +156,7 @@ hitokoto: true # default: false
 
 将 `hitokoto` 设为 `true` 可以开启首页的[一言](https://hitokoto.cn/){:target="_blank"}气泡，将鼠标悬浮在头像上气泡就会显示出来：
 
-![Hitokoto Bubble](../img/docs/hitokoto-bubble.jpg)
+![Hitokoto Bubble](/img/docs/hitokoto-bubble.jpg)
 
 
 
@@ -471,8 +471,6 @@ gem install jemoji
 ![image](/assets/Welcome to my blog/image-20240411194931999.png)
 
 
-![image](/assets/Welcome to my blog/image-20240414160614706.png)
-
 ### 本地环境配置
 
 通过 RubyInstaller 安装[固定链接](https://jekyllrb.com/docs/installation/windows/#installation-via-rubyinstaller)
@@ -571,7 +569,9 @@ git push origin master
 问题：使用`jekyll serve --host 0.0.0.0`命令启动失败
 解决方案：安装bundle
 
-  $ gem install bundle
+```
+gem install bundle
+```
 
 使用`bundle exec jekyll serve --watch`命令启动
 
